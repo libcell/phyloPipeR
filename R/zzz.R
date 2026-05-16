@@ -43,11 +43,27 @@
 
 
 .onLoad <- function(libname, pkgname) {
+  # 1. Preserve original options and disable conflict warnings temporarily
   old_opts <- options(warn.conflicts = FALSE)
-  suppressMessages({
-    requireNamespace("dendextend", quietly = TRUE)
-  })
   assign(".temp_options", old_opts, envir = parent.env(environment()))
 
+  # 2. Silently load 'dendextend' namespace; warn if not installed
+  suppressMessages({
+    if (!requireNamespace("dendextend", quietly = TRUE)) {
+      warning("Package 'dendextend' not installed. Some functions may not work.")
+    }
+  })
+
+  # 3. Handle rgl safely on macOS / Unix-like systems
+  #    Use null device to avoid OpenGL errors in headless or M-series Mac environments
+  if (.Platform$OS.type == "unix") {
+    # Only set RGL_USE_NULL if the user hasn't manually set it
+    if (Sys.getenv("RGL_USE_NULL") == "") {
+      Sys.setenv(RGL_USE_NULL = "TRUE")
+      message("rgl detected: using null device to avoid OpenGL errors on macOS/Linux")
+    }
+  }
+
+  # 4. Return invisibly (standard practice for .onLoad)
   invisible()
 }
