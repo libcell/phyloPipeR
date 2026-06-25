@@ -118,7 +118,7 @@ tree <- gene_tree_fetch(gene_id = "K00826",
 
 ## Please Cite
 
-Li F, Zou Y, Li T, et al. phyloPipeR: An R Package for End-to-End Phylogenetic Reconstruction and Tree Comparison[J]. ***Current Issues in Molecular Biology***, 2026, 48(6): 600.
+Li F, Zou Y, Li T, et al. *phyloPipeR*: An R Package for End-to-End Phylogenetic Reconstruction and Tree Comparison[J]. ***Current Issues in Molecular Biology***, 2026, 48(6): 600. DOI: <10.3390/cimb48060600>
 
 ## Contact
 
