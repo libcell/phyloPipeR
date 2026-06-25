@@ -6,7 +6,7 @@
 [![License: GPL-3](https://img.shields.io/badge/license-GPL--3-red.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Coverage: 100%](https://img.shields.io/badge/codecov-100%25-brightreegn.svg)](https://codecov.io/gh/libcell/phyloPipeR)
 [![phyloPipeR](https://img.shields.io/badge/phyloPipeR-0.1.0-purple.svg)](https://github.com/libcell/phyloPipeR)
-[![DOI](https://zenodo.org/badge/DOI/10.3390/cimb48060600.svg)](https://doi.org/10.3390/cimb48060600)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 ## Phylogenetic Analysis Toolkit for R
 
@@ -118,7 +118,7 @@ tree <- gene_tree_fetch(gene_id = "K00826",
 
 ## Please Cite
 
-Li F, Zou Y, Li T, et al. *phyloPipeR*: An R Package for End-to-End Phylogenetic Reconstruction and Tree Comparison[J]. ***Current Issues in Molecular Biology***, 2026, 48(6): 600. DOI: [10.3390/cimb48060600](https://www.mdpi.com/1467-3045/48/6/600 "View paper")
+Li F, Zou Y, Li T, et al. *phyloPipeR*: An R Package for End-to-End Phylogenetic Reconstruction and Tree Comparison[J]. ***Current Issues in Molecular Biology***, 2026, 48(6): 600. DOI: [10.3390/cimb48060600](https://www.mdpi.com/1467-3045/48/6/600 "iew paper")
 
 ## Contact
 
